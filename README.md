@@ -34,3 +34,31 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 ```
+
+### .condarc
+
+anaconda 또는 miniconda의 설정 파일입니다. [공식문서](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html)
+
+```yaml
+channels:
+  - conda-forge
+  - defaults
+```
+
+위 처럼 설정하면 `conda install` 명령의 기본 채널이 `conda-forge`로 설정됩니다.
+
+### pyproject.toml
+
+[PEP-518]에서 처음 등장한 build-time dependency를 선언적으로 관리하기 위해 추가된 파일.
+
+용도가 확장되어 black, isort, mypy, pytest등의 툴들도 설정 파일료 `pyproject.toml`파일을 이용하고 있습니다. (flake8은 지원안함)
+
+예시 파일은 [FastAPI](https://github.com/tiangolo/fastapi)의 pyproject 파일입니다.
+
+[참고문서](https://tech.buzzvil.com/blog/setup.py-%EB%A9%88%EC%B6%B0/)
+
+### .flake8
+
+python linter중 하나인 [flake8](https://flake8.pycqa.org/en/latest/index.html)의 설정 파일입니다.
+
+예시 파일은 [black](https://github.com/psf/black/blob/main/.flake8)에서 제시한 black과의 호환을 위한 flake8 설정 파일입니다.
