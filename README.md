@@ -1,7 +1,9 @@
 # dotfiles
+
 .dot
 
 ## Tips
+
 ### .bashrc vs .bash_profile
 
 `.bashrc`는 non-login shell을 위한 설정으로, ssh 로그인시에는 적용되지 않습니다.
@@ -62,7 +64,6 @@ channels:
 python linter중 하나인 [flake8](https://flake8.pycqa.org/en/latest/index.html)의 설정 파일입니다.
 
 예시 파일은 [black](https://github.com/psf/black/blob/main/.flake8)에서 제시한 black과의 호환을 위한 flake8 설정 파일입니다.
-
 
 ### .pre-commit-config.yaml
 
